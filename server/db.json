@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 25,
+      "address": "NoWhere"
+    },
+    {
+      "id": 2,
+      "name": "Jason Bourne",
+      "age": 34,
+      "address": "Unknown"
+    },
+    {
+      "id": 3,
+      "name": "William Norton",
+      "age": 38,
+      "address": "One Place"
+    }
+  ]
+}
