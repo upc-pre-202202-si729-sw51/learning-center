@@ -53,4 +53,22 @@ export class StudentsService {
         catchError(this.handleError));
   }
 
+  // Get All Students
+  getAll(): Observable<Student> {
+    return this.http.get<Student>(this.basePath, this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
+
+  // Delete Student
+  delete(id: any) {
+    return this.http.delete(`${this.basePath}/${id}`, this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
+
+  // Update Student
+  update(id: any, item: any): Observable<Student> {
+    return this.http.put<Student>(`${this.basePath}/${id}`,
+      JSON.stringify(item), this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
 }
