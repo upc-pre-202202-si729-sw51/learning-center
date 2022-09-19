@@ -21,13 +21,15 @@ import {MatDividerModule} from "@angular/material/divider";
 import { StudentsComponent } from './learning/pages/students/students.component';
 import { HomeComponent } from './public/pages/home/home.component';
 import { AboutComponent } from './public/pages/about/about.component';
+import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentsComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
