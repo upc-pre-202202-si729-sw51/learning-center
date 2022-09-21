@@ -2,8 +2,8 @@
   <h1>ACME Studio</h1>
   <h2> Learning Center</h2>
   <div class="mat-spacer"></div>
-  <a mat-button [routerLink]="'/home'">Home</a>
-  <a mat-button [routerLink]="'/students'">Students</a>
-  <a mat-button [routerLink]="'/about'">About</a>
+  <a mat-button *ngFor="let option of options"
+     [routerLink]="option.path">{{ option.title }}</a>
+
 </mat-toolbar>
 <router-outlet></router-outlet>

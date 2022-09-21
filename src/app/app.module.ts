@@ -22,6 +22,8 @@ import { StudentsComponent } from './learning/pages/students/students.component'
 import { HomeComponent } from './public/pages/home/home.component';
 import { AboutComponent } from './public/pages/about/about.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
+import {InstructorsService} from "./learning/services/instructors.service";
+import { InstructorsComponent } from './learning/pages/instructors/instructors.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
     StudentsComponent,
     HomeComponent,
     AboutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    InstructorsComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,7 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
     MatGridListModule,
     MatDividerModule
   ],
-  providers: [StudentsService],
+  providers: [StudentsService, InstructorsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
