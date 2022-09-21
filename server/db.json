@@ -18,5 +18,15 @@
       "age": 38,
       "address": "One Place"
     }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "name": "John Doe"
+    },
+    {
+      "id": 2,
+      "name": "Jason Bourne"
+    }
   ]
 }
