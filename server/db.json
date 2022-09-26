@@ -28,5 +28,17 @@
       "id": 2,
       "name": "Jason Bourne"
     }
+  ],
+  "users": [
+    {
+      "email": "john.doe@gmail.com",
+      "password": "$2a$10$YY3GOo75iwAjBHqJ4F17bOLHE9EGzyDBNfW8R1BoSITiZYDsf1DzS",
+      "id": 1
+    },
+    {
+      "email": "edward.norton@gmail.com",
+      "password": "$2a$10$ckaGTkrScyeQg.kw7YeMQeZlv9T8om2j2DUfwTRgs6m2XtbMoRdJK",
+      "id": 2
+    }
   ]
 }
